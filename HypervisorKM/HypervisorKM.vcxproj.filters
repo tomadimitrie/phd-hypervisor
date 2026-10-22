@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="Handlers.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="MainKM.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="Storage.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="Memory.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="Hypervisor.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Runtime\CRT.cpp">
+      <Filter>Sources\Common\Runtime</Filter>
+    </ClCompile>
+    <ClCompile Include="CPU.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="EPT.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="VMCS.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="AsmHelpersC.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="VmExit.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="Lifetime.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="Vcpu.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="VmxOperation.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Handlers.hpp">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Storage.hpp">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Memory.hpp">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Logging.hpp">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Hypervisor.hpp">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\Driver.hpp">
+      <Filter>Headers\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Utils\Memory.hpp">
+      <Filter>Headers\Common\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Utils\Numeric.hpp">
+      <Filter>Headers\Common\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Utils\Templates.hpp">
+      <Filter>Headers\Common\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Utils\Math.hpp">
+      <Filter>Headers\Common\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Utils.hpp">
+      <Filter>Headers\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Runtime\CRT.hpp">
+      <Filter>Headers\Common\Runtime</Filter>
+    </ClInclude>
+    <ClInclude Include="CPU.hpp">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="EPT.hpp">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="VMCS.hpp">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="AsmHelpersC.hpp">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Utils\Enums.hpp">
+      <Filter>Headers\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Utils\ErrorHandling.hpp">
+      <Filter>Headers\Common\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="VmExit.hpp">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Utils\Bits.hpp">
+      <Filter>Headers\Common\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Lifetime.hpp">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Vcpu.hpp">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="VmxOperation.hpp">
+      <Filter>Headers</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Inf Include="HypervisorKM.inf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Headers">
+      <UniqueIdentifier>{1f99bd0c-77b6-47aa-a045-0d95325be492}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sources">
+      <UniqueIdentifier>{804cd445-4d6b-41dc-9512-51845bea299b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headers\Common">
+      <UniqueIdentifier>{db2fb1fc-de86-4e3a-8012-69fd9ac21eae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sources\Common">
+      <UniqueIdentifier>{ebfe9bdb-2759-4f8e-a25c-75a0a5b99a98}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headers\Common\Utils">
+      <UniqueIdentifier>{23d89de7-fe69-4dbc-96bc-77d8f4853e71}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headers\Common\Runtime">
+      <UniqueIdentifier>{847aff4a-e725-4584-99eb-24a1eab498c3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sources\Common\Runtime">
+      <UniqueIdentifier>{10ec8ae2-c012-4d92-9b8d-2228490f9f5c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <MASM Include="AsmHelpers.asm">
+      <Filter>Sources</Filter>
+    </MASM>
+  </ItemGroup>
+</Project>

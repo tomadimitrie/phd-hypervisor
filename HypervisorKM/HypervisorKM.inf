@@ -1,0 +1,52 @@
+[Version]
+Signature   = "$WINDOWS NT$"
+Class       = System
+ClassGuid   = {4d36e97d-e325-11ce-bfc1-08002be10318}
+Provider    = %ManufacturerName%
+CatalogFile = HypervisorKM.cat
+DriverVer   =
+PnpLockdown = 1
+
+[DestinationDirs]
+DefaultDestDir = 13
+
+[SourceDisksNames]
+1 = %DiskName%,,,""
+
+[SourceDisksFiles]
+HypervisorKM.sys = 1,,
+
+[Manufacturer]
+%ManufacturerName% = Standard,NT$ARCH$.10.0...16299
+
+[Standard.NT$ARCH$.10.0...16299]
+%HypervisorKM.DeviceDesc% = HypervisorKM_Device, Root\HypervisorKM
+
+[HypervisorKM_Device.NT]
+CopyFiles = File_Copy
+
+[File_Copy]
+HypervisorKM.sys
+
+[HypervisorKM_Device.NT.Services]
+AddService = HypervisorKM,%SPSVCINST_ASSOCSERVICE%, HypervisorKM_Service_Inst
+
+[HypervisorKM_Service_Inst]
+DisplayName    = %HypervisorKM.SVCDESC%
+ServiceType    = 1
+StartType      = 3
+ErrorControl   = 1
+ServiceBinary  = %13%\HypervisorKM.sys
+
+[HypervisorKM_Device.NT.Wdf]
+KmdfService = HypervisorKM, HypervisorKM_wdfsect
+
+[HypervisorKM_wdfsect]
+KmdfLibraryVersion = $KMDFVERSION$
+
+[Strings]
+SPSVCINST_ASSOCSERVICE = 0x00000002
+ManufacturerName = "Lab"
+DiskName = "HypervisorKM Installation Disk"
+HypervisorKM.DeviceDesc = "HypervisorKM Device"
+HypervisorKM.SVCDESC = "HypervisorKM Service"
